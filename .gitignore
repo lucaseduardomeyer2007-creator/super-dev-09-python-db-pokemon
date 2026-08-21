@@ -23,8 +23,6 @@ logs/
 
 # Arquivos de ambiente
 .env
-.env.*
-!.env.example
 
 # Cache de ferramentas
 .pytest_cache/
