@@ -7,7 +7,7 @@ import sys
 # para que os imports `from src import .` funcionem corretamente
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src.controllers import calculadora_controller, categoria_controller
+from src.controllers import calculadora_controller, categoria_controller, pokemon_controller
 
 # Swagger = http://localhost:8000/docs
 
@@ -19,6 +19,7 @@ app = FastAPI(
 
 app.include_router(calculadora_controller.router)
 app.include_router(categoria_controller.router)
+app.include_router(pokemon_controller.router)
 
 
 if __name__ == "__main__":
